@@ -1,4 +1,4 @@
-# tool is dont predict %100, pls stop in discord channel
+# tool is dont predict %100, pls stop spam in discord channel
 ----------------------------------------------------------------------
 
 
