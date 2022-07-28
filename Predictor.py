@@ -28,7 +28,7 @@ class main:
 			open("errors.txt", "w+").close()
 			now = time.localtime()
 			logging.exception(f'A error has occured at {time.strftime("%H:%M:%S %I", now)}')
-			self.print("An error has occured check logs.txt for more info", "error")
+			self.print("OOPS!! an error has occured check logs.txt for more info", "error")
 			time.sleep(2)
 			raise
 			# self.browser.close()
@@ -143,7 +143,7 @@ class main:
 		print("[", end="")
 		cprint(base64.b64decode(b'IENSRURJVFMg').decode('utf-8'), "cyan", end="")
 		print("]", end="")
-		print(base64.b64decode(b'IE1hZGUgYnkgSWNlIEJlYXIjMDE2Nw==').decode('utf-8'))
+		print(base64.b64decode(b'dG9vbCBmcm9tIEljZSBCZWFyIzAxNjcgfCBpIGZpeCB0aGUgdG9vbCwgaWYgdSBuZWVkIGhlbHAgZG0gbWUgSUh2T2MjMTk5Ng==').decode('utf-8'))
 		time.sleep(3)
 		self.clear()
 
@@ -279,7 +279,7 @@ class main:
 					time.sleep(5)
 					exit()
 
-
+	
 			browser = self.browser
 			browser.get("https://bloxflip.com/crash") # Open bloxflip
 			try:
@@ -322,7 +322,7 @@ class main:
 
 	def updateBetAmount(self, amount):
 		browser = self.browser
-		element = browser.find_elements(By.CSS_SELECTOR, '.MuiInputBase-input.MuiFilledInput-input.MuiInputBase-inputAdornedStart.MuiFilledInput-inputAdornedStart')[0]
+		element = browser.find_elements(By.CSS_SELECTOR, 'input.input_input__uGeT_.input_inputWithCurrency__sAiOQ'')[0]
 		for _ in range(10):
 			element.send_keys(f"{Keys.BACKSPACE}")
 		element.send_keys(f"{amount}")
@@ -330,7 +330,7 @@ class main:
 
 	def updateMultiplier(self, multiplier):
 		browser = self.browser
-		element = browser.find_elements(By.CSS_SELECTOR, '.MuiInputBase-input.MuiFilledInput-input.MuiInputBase-inputAdornedStart.MuiFilledInput-inputAdornedStart')[1]
+		element = browser.find_elements(By.CSS_SELECTOR, '.input_input__uGeT_')[1]
 		for _ in range(10):
 			element.send_keys(f"{Keys.BACKSPACE}")
 		element.send_keys(f"{multiplier}")
