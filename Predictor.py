@@ -322,7 +322,7 @@ class main:
 
 	def updateBetAmount(self, amount):
 		browser = self.browser
-		element = browser.find_elements(By.CSS_SELECTOR, 'input.input_input__uGeT_.input_inputWithCurrency__sAiOQ'')[0]
+		element = browser.find_elements(By.CSS_SELECTOR, 'input.input_input__uGeT_.input_inputWithCurrency__sAiOQ')[0]
 		for _ in range(10):
 			element.send_keys(f"{Keys.BACKSPACE}")
 		element.send_keys(f"{amount}")
